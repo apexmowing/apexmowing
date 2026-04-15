@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Juan's Mowing - Reliable premium lawn care and maintenance in your neighborhood. Professional mowing, edging, and cleanup. Free estimates available.">
+    <title>Juan's Mowing | Premium Lawn Care</title>
+    
+    <style>
+        :root {
+            --green: #166534;
+            --lime: #4ade80;
+            --dark: #052e16;
+            --light: #f8fafc;
+            --accent: #eab308;
+        }
+       
+        * { margin:0; padding:0; box-sizing:border-box; }
+        
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: var(--light);
+        }
+       
+        header {
+            background: linear-gradient(rgba(5,46,22,0.85), rgba(5,46,22,0.85)), 
+                        url('https://picsum.photos/id/1015/1920/1080') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 140px 20px 100px;
+        }
+       
+        .logo {
+            font-size: 3.6rem;
+            font-weight: 900;
+            margin-bottom: 12px;
+            text-shadow: 0 4px 15px rgba(0,0,0,0.6);
+        }
+       
+        .tagline {
+            font-size: 1.85rem;
+            margin: 15px 0 10px;
+            font-weight: 700;
+        }
+       
+        .subtag {
+            font-size: 1.35rem;
+            max-width: 720px;
+            margin: 0 auto 35px;
+        }
+       
+        .cta-btn {
+            display: inline-block;
+            background: var(--lime);
+            color: var(--dark);
+            padding: 15px 34px;
+            font-size: 1.25rem;
+            font-weight: 700;
+            border-radius: 50px;
+            text-decoration: none;
+            margin: 12px 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+       
+        .cta-btn:hover {
+            transform: translateY(-3px) scale(1.05);
+            background: white;
+        }
+       
+        .cta-btn.accent {
+            background: var(--accent);
+        }
+       
+        nav {
+            background: var(--dark);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+       
+        nav ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 16px 0;
+        }
+       
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 24px;
+            font-weight: 600;
+        }
+       
+        nav a:hover {
+            background: rgba(255,255,255,0.1);
+        }
+       
+        section {
+            padding: 90px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+       
+        h2 {
+            text-align: center;
+            font-size: 2.9rem;
+            color: var(--green);
+            margin-bottom: 60px;
+        }
+       
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+        }
+       
+        .service-card {
+            background: white;
+            border-radius: 20px;
+            padding: 35px 25px;
+            text-align: center;
+            box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+            transition: all 0.4s ease;
+        }
+       
+        .service-card:hover {
+            transform: translateY(-12px);
+        }
+       
+        .service-icon {
+            font-size: 4rem;
+            margin-bottom: 24px;
+        }
+       
+        .pricing {
+            background: #f1f5f9;
+        }
+       
+        .price-card {
+            background: white;
+            border: 4px solid var(--green);
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            max-width: 360px;
+            margin: 0 auto;
+            transition: transform 0.3s;
+        }
+       
+        .price-card:hover {
+            transform: scale(1.03);
+        }
+       
+        .form-container {
+            max-width: 720px;
+            margin: 0 auto;
+            background: white;
+            padding: 45px 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+        }
+       
+        input, textarea, select {
+            width: 100%;
+            padding: 15px;
+            margin: 14px 0;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-size: 1.05rem;
+        }
+       
+        button {
+            background: var(--green);
+            color: white;
+            border: none;
+            padding: 18px 40px;
+            font-size: 1.25rem;
+            border-radius: 50px;
+            cursor: pointer;
+            width: 100%;
+            font-weight: 700;
+            margin-top: 10px;
+        }
+       
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 70px 20px 40px;
+        }
+       
+        .contact-info {
+            font-size: 1.45rem;
+            margin: 25px 0;
+        }
+       
+        .contact-info a {
+            color: var(--lime);
+            text-decoration: none;
+        }
+       
+        @media (max-width: 768px) {
+            header { padding: 100px 15px 70px; }
+            .logo { font-size: 2.9rem; }
+            .tagline { font-size: 1.55rem; }
+            .cta-btn { display: block; margin: 12px auto; max-width: 280px; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero -->
+    <header>
+        <div class="logo">🚜 JUAN'S MOWING</div>
+        <p class="tagline">PREMIUM LAWN CARE &amp; MAINTENANCE</p>
+        <p class="subtag">Your Best Lawn Yet.<br>Professional Care. Exceptional Results.</p>
+        <a href="#booking" class="cta-btn">Book a Free Estimate</a>
+        <a href="tel:3525125274" class="cta-btn accent">📞 (352) 512-5274</a>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#booking">Schedule</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Services -->
+    <section id="services">
+        <h2>Our Expertise</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🌿</div>
+                <h3>Precision Mowing</h3>
+                <p>Clean, even cuts with professional trimming and debris blow-off from hard surfaces.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">✂️</div>
+                <h3>Professional Edging</h3>
+                <p>Sharp mechanical edging along driveways, walkways, and flower beds.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🍂</div>
+                <h3>Seasonal Cleanup</h3>
+                <p>Complete leaf removal, debris hauling, and property refresh.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="pricing">
+        <h2>Starting Rates</h2>
+        <div class="price-card">
+            <h3>Small Yard</h3>
+            <p style="font-size:1.15rem; color:#666;">Up to 0.25 Acre</p>
+            <p style="font-size:2.7rem; font-weight:bold; color:var(--green); margin:25px 0;">$25 – $40</p>
+        </div>
+        <div style="height:40px;"></div>
+        <div class="price-card">
+            <h3>Average Yard</h3>
+            <p style="font-size:1.15rem; color:#666;">0.25 to 1.0 Acre</p>
+            <p style="font-size:2.7rem; font-weight:bold; color:var(--green); margin:25px 0;">$40 – $70</p>
+        </div>
+        <div style="height:40px;"></div>
+        <div class="price-card">
+            <h3>Large Estate</h3>
+            <p style="font-size:1.15rem; color:#666;">Over 1.0 Acre</p>
+            <p style="font-size:2.7rem; font-weight:bold; color:var(--green); margin:25px 0;">$70+</p>
+        </div>
+        <p style="text-align:center; margin-top:50px; font-style:italic;">
+            Rates may vary based on condition and specific needs. Free estimates available.
+        </p>
+    </section>
+
+    <!-- Booking Form -->
+    <section id="booking">
+        <h2>Schedule Your Service</h2>
+        <div class="form-container">
+            <form id="bookingForm">
+                <input type="text" id="name" placeholder="Full Name" required>
+                <input type="tel" id="phone" placeholder="Phone Number" required>
+                <input type="text" id="address" placeholder="Property Address" required>
+                <input type="date" id="date" required>
+               
+                <select id="service_type" required>
+                    <option value="" disabled selected>Service Type</option>
+                    <option value="Standard Mowing">Standard Mowing</option>
+                    <option value="Full Yard Cleanup">Full Yard Cleanup</option>
+                    <option value="Edge Only">Edge Only</option>
+                    <option value="One-Time Cut">One-Time Cut</option>
+                </select>
+               
+                <textarea id="notes" rows="5" placeholder="Additional Notes (lawn condition, special requests, etc.)"></textarea>
+               
+                <button type="button" onclick="sendEmail()">Send Booking Request</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 style="color:var(--green);">About Juan's Mowing</h2>
+        <div style="max-width:800px; margin:0 auto; text-align:center; font-size:1.15rem; line-height:1.7;">
+            <p>Hi, I'm Juan. I take pride in delivering high-quality lawn care to my local neighborhood. 
+            I focus on precision, reliability, and making every yard look its absolute best.</p>
+            <p style="margin-top:25px;">Whether you need regular mowing, sharp edging, or a complete seasonal cleanup, 
+            I'm committed to providing professional results at honest prices.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p style="font-size:2.2rem; margin-bottom:20px;">🚜 JUAN'S MOWING</p>
+        <div class="contact-info">
+            📞 <a href="tel:3525125274">(352) 512-5274</a><br>
+            📧 <a href="mailto:apexmowing91@gmail.com">apexmowing91@gmail.com</a>
+        </div>
+        <p style="margin:30px 0 15px;">Serving local neighborhoods with pride</p>
+        
+        <a href="tel:3525125274" class="cta-btn accent">CALL NOW</a>
+        <a href="#booking" class="cta-btn">Book Online</a>
+       
+        <p style="margin-top:60px; opacity:0.75; font-size:0.95rem;">
+            &copy; 2026 Juan's Mowing. All rights reserved.
+        </p>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                if (this.getAttribute('href') !== '#') {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Direct email function
+        function sendEmail() {
+            const name = document.getElementById('name').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const address = document.getElementById('address').value.trim();
+            const date = document.getElementById('date').value;
+            const service = document.getElementById('service_type').value;
+            const notes = document.getElementById('notes').value.trim();
+
+            if (!name || !phone || !address || !date || !service) {
+                alert("Please fill out all required fields.");
+                return;
+            }
+
+            const subject = encodeURIComponent(`New Booking Request - ${name}`);
+            const body = encodeURIComponent(
+                `Name: ${name}\n` +
+                `Phone: ${phone}\n` +
+                `Address: ${address}\n` +
+                `Requested Date: ${date}\n` +
+                `Service Type: ${service}\n\n` +
+                `Additional Notes:\n${notes || "None provided"}`
+            );
+
+            const mailtoLink = `mailto:apexmowing91@gmail.com?subject=${subject}&body=${body}`;
+            window.location.href = mailtoLink;
+        }
+    </script>
+</body>
+</html>
