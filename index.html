@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Apex Mowing - Premium lawn care and maintenance. Professional mowing, edging, and seasonal cleanup. Free estimates available.">
+    <meta name="description" content="Apex Mowing - Premium lawn care and maintenance. Professional mowing, weed whacking, and seasonal cleanup. Free estimates available.">
     <title>Apex Mowing | Premium Lawn Care</title>
     
     <style>
@@ -214,165 +214,102 @@
     </style>
 </head>
 <body>
-    <!-- Hero -->
-    <header>
-        <div class="logo">🚜 APEX MOWING</div>
-        <p class="tagline">PREMIUM LAWN CARE &amp; MAINTENANCE</p>
-        <p class="subtag">Your Best Lawn Yet.<br>Professional Care. Exceptional Results.</p>
-        <a href="#booking" class="cta-btn">Book a Free Estimate</a>
-        <a href="tel:3525125274" class="cta-btn accent">📞 (352) 512-5274</a>
-    </header>
 
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#booking">Schedule</a></li>
-            <li><a href="#about">About</a></li>
-        </ul>
-    </nav>
+<header>
+    <div class="logo">🚜 APEX MOWING</div>
+    <p class="tagline">PREMIUM LAWN CARE & MAINTENANCE</p>
+    <p class="subtag">Your Best Lawn Yet.<br>Professional Care. Exceptional Results.</p>
+    <a href="#booking" class="cta-btn">Book a Free Estimate</a>
+    <a href="tel:3525125274" class="cta-btn accent">📞 (352) 512-5274</a>
+</header>
 
-    <!-- Services -->
-    <section id="services">
-        <h2>Our Expertise</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <div class="service-icon">🌿</div>
-                <h3>Precision Mowing</h3>
-                <p>Clean, even cuts with professional trimming and debris blow-off from hard surfaces.</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon">✂️</div>
-                <h3>Professional Edging</h3>
-                <p>Sharp mechanical edging along driveways, walkways, and flower beds.</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon">🍂</div>
-                <h3>Seasonal Cleanup</h3>
-                <p>Complete leaf removal, debris hauling, and property refresh.</p>
-            </div>
+<nav>
+    <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#booking">Schedule</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+</nav>
+
+<section id="services">
+    <h2>Our Expertise</h2>
+    <div class="services-grid">
+        <div class="service-card">
+            <div class="service-icon">🌿</div>
+            <h3>Precision Mowing</h3>
+            <p>Clean, even cuts with trimming and debris blow-off from hard surfaces.</p>
         </div>
-    </section>
-
-    <!-- Pricing -->
-    <section id="pricing" class="pricing">
-        <h2>Starting Rates</h2>
-        <div class="price-card">
-            <h3>Small Yard</h3>
-            <p style="font-size:1.15rem; color:#666;">Up to 0.25 Acre</p>
-            <p style="font-size:2.7rem; font-weight:bold; color:var(--green); margin:25px 0;">$25 – $40</p>
+        <div class="service-card">
+            <div class="service-icon">🧵</div>
+            <h3>Weed Whacking</h3>
+            <p>Detailed trimming around fences, trees, edges, and hard-to-reach areas for a clean finish.</p>
         </div>
-        <div style="height:40px;"></div>
-        <div class="price-card">
-            <h3>Average Yard</h3>
-            <p style="font-size:1.15rem; color:#666;">0.25 to 1.0 Acre</p>
-            <p style="font-size:2.7rem; font-weight:bold; color:var(--green); margin:25px 0;">$40 – $70</p>
+        <div class="service-card">
+            <div class="service-icon">🍂</div>
+            <h3>Seasonal Cleanup</h3>
+            <p>Complete leaf removal, debris hauling, and property refresh.</p>
         </div>
-        <div style="height:40px;"></div>
-        <div class="price-card">
-            <h3>Large Estate</h3>
-            <p style="font-size:1.15rem; color:#666;">Over 1.0 Acre</p>
-            <p style="font-size:2.7rem; font-weight:bold; color:var(--green); margin:25px 0;">$70+</p>
-        </div>
-        <p style="text-align:center; margin-top:50px; font-style:italic;">
-            Rates may vary based on condition and specific needs. Free estimates available.
-        </p>
-    </section>
+    </div>
+</section>
 
-    <!-- Booking Form -->
-    <section id="booking">
-        <h2>Schedule Your Service</h2>
-        <div class="form-container">
-            <form id="bookingForm">
-                <input type="text" id="name" placeholder="Full Name" required>
-                <input type="tel" id="phone" placeholder="Phone Number" required>
-                <input type="text" id="address" placeholder="Property Address" required>
-                <input type="date" id="date" required>
-               
-                <select id="service_type" required>
-                    <option value="" disabled selected>Service Type</option>
-                    <option value="Standard Mowing">Standard Mowing</option>
-                    <option value="Full Yard Cleanup">Full Yard Cleanup</option>
-                    <option value="Edge Only">Edge Only</option>
-                    <option value="One-Time Cut">One-Time Cut</option>
-                </select>
-               
-                <textarea id="notes" rows="5" placeholder="Additional Notes (lawn condition, special requests, etc.)"></textarea>
-               
-                <button type="button" onclick="sendEmail()">Send Booking Request</button>
-            </form>
-        </div>
-    </section>
+<section id="pricing" class="pricing">
+    <h2>Starting Rates</h2>
+    <div class="price-card">
+        <h3>Small Yard</h3>
+        <p>Up to 0.25 Acre</p>
+        <p>$25 – $40</p>
+    </div>
+    <div style="height:40px;"></div>
+    <div class="price-card">
+        <h3>Average Yard</h3>
+        <p>0.25 to 1.0 Acre</p>
+        <p>$40 – $70</p>
+    </div>
+    <div style="height:40px;"></div>
+    <div class="price-card">
+        <h3>Large Yard</h3>
+        <p>Over 1.0 Acre</p>
+        <p>$70+</p>
+    </div>
+</section>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2 style="color:var(--green);">About Apex Mowing</h2>
-        <div style="max-width:800px; margin:0 auto; text-align:center; font-size:1.15rem; line-height:1.7;">
-            <p>Apex Mowing is dedicated to providing high-quality lawn care and maintenance. 
-            The focus is on precision, reliability, and delivering exceptional results every time.</p>
-            <p style="margin-top:25px;">From regular mowing and sharp edging to complete seasonal cleanups, 
-            Apex Mowing is committed to making every property look its best.</p>
-        </div>
-    </section>
+<section id="booking">
+    <h2>Schedule Your Service</h2>
+    <div class="form-container">
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <input type="text" placeholder="Property Address" required>
+            <input type="date" required>
 
-    <!-- Footer -->
-    <footer>
-        <p style="font-size:2.2rem; margin-bottom:20px;">🚜 APEX MOWING</p>
-        <div class="contact-info">
-            📞 <a href="tel:3525125274">(352) 512-5274</a><br>
-            📧 <a href="mailto:apexmowing91@gmail.com">apexmowing91@gmail.com</a>
-        </div>
-        <p style="margin:30px 0 15px;">Professional Service</p>
-        
-        <a href="tel:3525125274" class="cta-btn accent">CALL NOW</a>
-        <a href="#booking" class="cta-btn">Book Online</a>
-       
-        <p style="margin-top:60px; opacity:0.75; font-size:0.95rem;">
-            &copy; 2026 Apex Mowing. All rights reserved.
-        </p>
-    </footer>
+            <select required>
+                <option disabled selected>Service Type</option>
+                <option>Standard Mowing</option>
+                <option>Weed Whacking Only</option>
+                <option>Full Yard Cleanup</option>
+                <option>One-Time Cut</option>
+            </select>
 
-    <script>
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                if (this.getAttribute('href') !== '#') {
-                    e.preventDefault();
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
+            <textarea placeholder="Additional Notes"></textarea>
 
-        // Direct email function
-        function sendEmail() {
-            const name = document.getElementById('name').value.trim();
-            const phone = document.getElementById('phone').value.trim();
-            const address = document.getElementById('address').value.trim();
-            const date = document.getElementById('date').value;
-            const service = document.getElementById('service_type').value;
-            const notes = document.getElementById('notes').value.trim();
+            <button type="submit">Send Request</button>
+        </form>
+    </div>
+</section>
 
-            if (!name || !phone || !address || !date || !service) {
-                alert("Please fill out all required fields.");
-                return;
-            }
+<section id="about">
+    <h2>About Apex Mowing</h2>
+    <p style="text-align:center; max-width:700px; margin:auto;">
+        Apex Mowing provides reliable lawn care including mowing, weed whacking, and cleanups.
+    </p>
+</section>
 
-            const subject = encodeURIComponent(`New Booking Request - ${name}`);
-            const body = encodeURIComponent(
-                `Name: ${name}\n` +
-                `Phone: ${phone}\n` +
-                `Address: ${address}\n` +
-                `Requested Date: ${date}\n` +
-                `Service Type: ${service}\n\n` +
-                `Additional Notes:\n${notes || "None provided"}`
-            );
+<footer>
+    <p>🚜 APEX MOWING</p>
+    <p>(352) 512-5274</p>
+    <p>apexmowing91@gmail.com</p>
+</footer>
 
-            const mailtoLink = `mailto:apexmowing91@gmail.com?subject=${subject}&body=${body}`;
-            window.location.href = mailtoLink;
-        }
-    </script>
 </body>
 </html>
